@@ -1,0 +1,267 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+
+
+//ここから
+#global-container {
+  width: 100%;
+  height: 100%;
+
+  #container {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transition: transform .5s;
+    
+    &::before{
+      content: "";
+      display: block;
+      height: 87px;
+    }
+
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s;
+  
+    }
+    header {
+      width: 100%;
+      height: 84px;
+      border-bottom: solid 3px black;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 0;
+
+      & a {
+        text-decoration: none;
+        color: black;
+
+        .title-box {
+          display: flex;
+          @extend .font-lg;
+          align-items: center;
+    
+          & .far {
+            @extend .font-lg;
+            margin-right: 5px;
+          }
+  
+          & p {
+            display: none;
+          }
+        }
+      }
+  
+      
+      .menu-box {
+        background-color: transparent;
+        border: none;
+        outline: none !important;
+        &:hover {
+          cursor: pointer;
+        }
+  
+        & > span {
+          background-color: black;
+          width: 30px;
+          height: 2px;
+          display: block;
+          margin-bottom: 9px;
+          transition: transform .8s;
+  
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    main {
+      background-color: white;
+      
+      & .contents-box {
+        @extend .content-width;
+        padding-bottom: 20px;
+
+        & > h2 {
+          text-align: center;
+          margin-top: 26px;
+          font-size: 22px;
+          border: solid 2px;
+          @extend .mb-sm;
+
+          & > span {
+            display: block;
+            font-size: 16px;
+          }
+
+        }
+
+        & .contents {
+
+          & .trix-content {
+            word-break: break-all;
+          }
+
+          &:last-child {
+
+            & .content {
+              margin-bottom: 20px;
+            }
+          }
+
+          & .content {
+            width: 250px;
+            border: solid 1px;
+            margin: 0 auto 16px auto;
+            
+          }
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+      height: 35px;
+      background-color: white;
+      padding-top: 17px;
+      text-align: center;
+      border: solid 1px;
+
+      & > div {
+        display: flex;
+        & > a {
+          text-decoration: none;
+          font-size: 1px;
+          margin-right: 270px;
+          color: transparent;
+  
+        }
+  
+
+      }
+    }
+  }
+}
+
+//ボタンが押された時のクラス付与
+.menu-open {
+  background-color: rgb(34, 34, 34);
+  height: 100%;
+  width: auto;
+
+  & #container {
+    transform: translate(-224px, 60px);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 1);
+
+    & .cover {
+      opacity: 1 !important;
+      visibility: visible !important;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    & header {
+      position: static;
+      z-index: -1;
+
+    }
+
+    & .menu-box {
+      transform: translateX(8px);
+
+      & > span {
+
+        &:nth-child(1) {
+          transform: translateY(12px) rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          transform: translateX(-18px) scaleX(0);
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-11px) rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  background-color: rgb(34, 34, 34);
+  padding: 80px 0;
+
+  & > ul {
+    margin-right: 15px;
+    
+
+    & > li {
+      margin-bottom: 60px;
+
+      & > a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: gray;
+
+        }
+
+        & .main-title1 {
+          @extend .font-lg;
+          text-decoration: underline;
+          margin-right: 80px;
+        }
+
+        & .sub-title {
+          display: block;
+        }
+
+        & .main-title2 {
+          @extend .font-lg;
+          text-decoration: underline;
+          margin-right: 58px;
+        }
+
+        & .second {
+          margin-right: 65px;
+        }
+
+        & .main-title3 {
+          @extend .font-lg;
+          text-decoration: underline;
+          margin-right: 50px;
+        }
+
+        & .third {
+          margin-right: 75px;
+        }
+      }
+    }
+  }
+}

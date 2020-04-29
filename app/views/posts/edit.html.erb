@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <%= form_with(model: @post, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "タイトル入力" %>
+      <%= form.text_field :comment, placeholder: "コメント入力" %>
+      <%= form.text_area :content, id: :news_text, placeholder: 'プレイスホルダー'%>
+      <trix-editor input="news_text"></trix-editor>
+      <%= form.submit %>
+    <% end %>
+  </div>
+</div>

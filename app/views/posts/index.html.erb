@@ -1,0 +1,61 @@
+<div id='global-container'>
+  <div id="container">
+    <div class="cover"></div>
+    <header>
+      <a href='#' >
+        <div class="title-box">
+          <i class="far fa-newspaper"></i>
+          <h1>Coody.com</h1>
+          <p>ただの暇つぶしサイト</p>
+        </div>
+      </a>
+      <button class="menu-box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main>
+      <div class="contents-box">
+        <h2>new news<span>気になる記事を投稿してます</span></h2>
+        <div class="contents">
+          <% @posts.each do |post|%>
+            <div class="content">
+              <%= link_to post.content, post_path(post.id) %>
+            </div>
+          <% end %>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+      &copy; cody
+      <div>
+        <a href="/posts/new">テスト</a>
+      </div>
+    </footer>
+  </div>
+<!-- バーガーメニュークリック時のメニュー -->
+  <nav class="mobile-menu">
+    <ul class="mobile-menu__main">
+      <li class="mobile-menu__item">
+        <a href="/sns/index">
+          <span class="main-title1">SNS</span>
+          <span class="sub-title">複数メディアで情報発信中</span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#">
+          <span class="main-title2">about me</span>
+          <span class="sub-title second">自己紹介</span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#">
+          <span class="main-title3">contact me</span>
+          <span class="sub-title third">ご依頼</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

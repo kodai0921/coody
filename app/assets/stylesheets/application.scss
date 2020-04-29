@@ -1,0 +1,83 @@
+@import 'reset';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'fonts';
+@import 'modules/commons';
+@import "trix";
+
+
+//posts scss
+@import 'breakpoints/posts/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/posts/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/posts/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/posts/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/posts/1280up';
+}
+
+//roots scss
+@import 'breakpoints/roots/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/roots/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/roots/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/roots/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/roots/1280up';
+}
+
+//roots scss
+@import 'breakpoints/sns/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/sns/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/sns/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/sns/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/sns/1280up';
+}
+
+//show scss
+@import 'breakpoints/posts/show/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/posts/show/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/posts/show/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/posts/show/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/posts/show/1280up';
+}

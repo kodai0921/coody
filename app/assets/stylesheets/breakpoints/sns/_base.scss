@@ -1,0 +1,67 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+//note
+.note-box {
+  @extend .content-width-sm;
+  border: solid 1px;
+  margin-top: 10px;
+  overflow: scroll;
+  height: 300px;
+
+  & > h3 {
+    font-size: 30px;
+    display: block;
+    background-color: teal;
+    color: white;
+    text-align: center;
+  }
+
+  & > p {
+    padding: 20px;
+    font-size: 12px;
+    color: blue;
+  }
+
+  content {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.note-embed {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+//
+
+//twitter
+.twitter-box {
+  @extend .content-width-sm;
+  border: solid 1px;
+  margin-top: 40px;
+  overflow: scroll;
+  height: 300px;
+
+  & > h3 {
+    font-size: 30px;
+    display: block;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+  }
+
+  & > p {
+    padding: 20px;
+    font-size: 12px;
+    color: blue;
+  }
+
+  content {
+    width: inherit;
+    height: inherit;
+  }
+}

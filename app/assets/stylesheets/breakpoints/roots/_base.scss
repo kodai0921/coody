@@ -1,0 +1,85 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+@import 'mixin';
+
+.container {
+
+  & > video {
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    position: relative;
+
+  }
+
+  & .section-box {
+    @extend .content-width;
+    position: absolute;
+    top: 108px;
+    left: 19px;
+
+    & .content {
+
+      & > h2 {
+        @extend .font-lg;
+        text-align: center;
+        padding: 0 13px 15px 0;
+        font-size: 38px;
+        color: black;
+      }
+
+      & > p {
+        color: black;
+        font-size: 14px;
+        opacity: 0;
+
+        @include animation(
+          $name: kf-animate-sub-title,
+          $duration: 1.8s,
+          $delay: .6s
+        );
+        
+        & > span {
+          display: inline-block;
+          @extend .mb-sm;
+
+        }
+      }
+    }
+
+    & > a {
+      border-radius: 20px;
+      background-color: teal;
+      color: whitesmoke;
+      padding: 10px 10px;
+      border-style: none;
+      display: flex;
+      margin: 0 auto;
+      text-decoration: none;
+      width: 85px;
+      text-align: center;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .6)
+      }
+    }
+  }
+}
+
+@keyframes kf-animate-sub-title {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
