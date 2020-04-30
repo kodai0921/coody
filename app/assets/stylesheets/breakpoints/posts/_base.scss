@@ -241,6 +241,10 @@ Stylesheet: ベーススタイル
           display: block;
         }
 
+        & .first {
+          margin-right: 15px;
+        }
+
         & .main-title2 {
           @extend .font-lg;
           text-decoration: underline;
