@@ -67,3 +67,4 @@ gem 'trix'
 group :production do
   gem 'pg'
 end
+
