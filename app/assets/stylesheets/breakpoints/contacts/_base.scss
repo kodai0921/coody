@@ -39,7 +39,7 @@ h6 {
 
 .contacts-box {
   & .box {
-    padding: 16px 24px 430px ;
+    padding: 16px 24px 100px ;
 
     & > p {
       margin-bottom: 13px;
@@ -61,6 +61,14 @@ h6 {
         
       }
 
+      
+
     }
+    
+    
+  }
+
+  img {
+    margin: 0 0 146px 36px !important;
   }
 }

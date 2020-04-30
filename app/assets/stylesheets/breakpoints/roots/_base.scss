@@ -42,7 +42,7 @@ Stylesheet: ベーススタイル
         @include animation(
           $name: kf-animate-sub-title,
           $duration: 1.8s,
-          $delay: 3s
+          $delay: 2s
         );
         
         & > span {

@@ -2,7 +2,7 @@
   <div id="container">
     <div class="cover"></div>
     <header>
-      <a href='http://localhost:3000/posts'>
+      <a href='/posts'>
         <div class="title-box">
           <i class="far fa-newspaper"></i>
           <h1>Coody.com</h1>
@@ -52,7 +52,6 @@
       &copy; cody
       <div>
         <%= link_to '削除', post_path(@post.id), method: :delete %>
-        <%= link_to '編集', edit_post_path(@post.id) %>
       </div>
     </footer>
   </div>
@@ -66,13 +65,13 @@
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a href="#">
+        <a href="/intros/index">
           <span class="main-title2">about me</span>
           <span class="sub-title second">自己紹介</span>
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a href="#">
+        <a href="/contacts/index">
           <span class="main-title3">contact me</span>
           <span class="sub-title third">ご依頼</span>
         </a>

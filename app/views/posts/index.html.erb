@@ -44,18 +44,16 @@
         <div class="contents">
           <% @posts.each do |post|%>
             <div class="content">
+              <%= post.created_at.strftime("%Y-%m-%d %H:%M") %>
               <%= link_to post.content, post_path(post.id) %>
             </div>
           <% end %>
         </div>
-
+        <%= paginate(@posts) %>
       </div>
     </main>
     <footer>
       &copy; cody
-      <div>
-        <a href="/posts/new">テスト</a>
-      </div>
     </footer>
   </div>
 <!-- バーガーメニュークリック時のメニュー -->
