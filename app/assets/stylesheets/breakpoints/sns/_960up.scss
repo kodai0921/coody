@@ -3,3 +3,18 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+main {
+  .sns-box{
+    .note-box {
+      width: 400px !important;
+      height: 400px;
+    }
+    
+    .twitter-box {
+      width: 400px !important;
+      height: 400px;
+    }
+
+  }
+}

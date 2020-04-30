@@ -1,0 +1,35 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+
+
+//ここから
+h5 {
+  width: 88px;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 22px;
+  border: solid 2px;
+  @extend .mb-sm;
+
+  & > span {
+    font-size: 16px;
+  }
+}
+
+.intro-content {
+  display: flex;
+  padding-bottom: 270px;
+
+  & > img {
+    width: 136px;
+  }
+
+  & .intro {
+    margin-top: 14px;
+
+  }
+}

@@ -3,3 +3,63 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+
+
+.title-box {
+  font-size: 35px !important;
+
+}
+
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+
+  .content {
+    margin: 0 10px 30px 10px !important;
+      
+  }
+}
+
+.desktop-menu {
+  margin-top: 34px;
+  display: inline;
+
+  & > ul {
+    display: flex;
+    text-align: center;
+
+    & > li {
+      margin-right: 20px;
+
+      & > a {
+        & .main-title1  {
+          font-size: 20px;
+        }
+        & .main-title2  {
+          font-size: 20px;
+        }
+        & .main-title3  {
+          font-size: 20px;
+        }
+        & .sub-title {
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//mobile-menu削除
+.menu-box {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}

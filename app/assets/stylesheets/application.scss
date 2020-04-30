@@ -81,3 +81,41 @@
 @media (min-width: 1280px) {
   @import 'breakpoints/posts/show/1280up';
 }
+
+//intros scss
+@import 'breakpoints/intros/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/intros/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/intros/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/intros/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/intros/1280up';
+}
+
+//contacts scss
+@import 'breakpoints/contacts/base';
+
+@media (min-width: 480px) {
+  @import 'breakpoints/contacts/480up';
+}
+
+@media (min-width: 600px) {
+  @import 'breakpoints/contacts/600up';
+}
+
+@media (min-width: 960px) {
+  @import 'breakpoints/contacts/960up';
+}
+
+@media (min-width: 1280px) {
+  @import 'breakpoints/contacts/1280up';
+}

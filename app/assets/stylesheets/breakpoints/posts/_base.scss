@@ -122,11 +122,13 @@ Stylesheet: ベーススタイル
 
             & .content {
               margin-bottom: 20px;
+              overflow: scroll;
             }
           }
 
           & .content {
             width: 250px;
+            height: 200px;
             border: solid 1px;
             margin: 0 auto 16px auto;
             
@@ -264,4 +266,9 @@ Stylesheet: ベーススタイル
       }
     }
   }
+}
+
+//desktop-menu remove 
+.desktop-menu {
+  display: none;
 }

@@ -1,0 +1,66 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+
+
+//ここから
+h6 {
+  width: 104px;
+  height: 45px;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 22px;
+  border: solid 2px;
+  @extend .mb-sm;
+
+  & > span {
+    font-size: 16px;
+  }
+}
+
+.main-box {
+  display: flex;
+  padding: 12px;
+}
+.main-content {
+  display: flex;
+
+  .contact {
+    width: 181px;
+    padding: 26px 0 0 5px;
+
+  }
+
+  
+}
+
+.contacts-box {
+  & .box {
+    padding: 16px 24px 430px ;
+
+    & > p {
+      margin-bottom: 13px;
+
+      & > i {
+        margin-left: 5px;
+      }
+
+      & .mail{
+        margin-left: 23px;
+        
+      }
+      & .twitter{
+        margin-left: 5px;
+        
+      }
+      & .note{
+        margin-left: 19px;
+        
+      }
+
+    }
+  }
+}

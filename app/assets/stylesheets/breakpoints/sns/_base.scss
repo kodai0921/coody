@@ -4,6 +4,24 @@ Stylesheet: ベーススタイル
 
 ******************************************************************/
 
+.sns-section {
+  width: 80px;
+  height: 26px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 22px;
+  border: solid 2px;
+  @extend .mb-sm;
+
+  & > span {
+    font-size: 16px;
+  }
+}
+
+.sns {
+  margin: 0 auto;
+}
+
 //note
 .note-box {
   @extend .content-width-sm;

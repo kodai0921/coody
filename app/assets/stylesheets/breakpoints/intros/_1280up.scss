@@ -3,15 +3,12 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
-main {
-  .sns-box{
-    .note-box {
-      width: 500px !important;
-    }
-    
-    .twitter-box {
-      width: 500px !important;
-    }
 
-  }
+img {
+  width: 160px !important;
+}
+
+.intro {
+  margin-left: 64px !important;
+  margin-top: 57px !important;
 }

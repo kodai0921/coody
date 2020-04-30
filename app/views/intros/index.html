@@ -2,7 +2,7 @@
   <div id="container">
     <div class="cover"></div>
     <header>
-      <a href='http://localhost:3000/posts'>
+      <a href='/posts' >
         <div class="title-box">
           <i class="far fa-newspaper"></i>
           <h1>Coody.com</h1>
@@ -37,13 +37,17 @@
         <span></span>
       </button>
     </header>
+    
     <main>
       <div class="contents-box">
-        <h2>ピックアップニュース</h2>
-        <div class="contents">
-          <div class="show-content">
-            <%= @post.content %>
-          </div>
+        <h5>about me<span>自己紹介</span></h5>
+
+        <div class="intro-content">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/41LtCMl42CL._AC_.jpg" alt="自己紹介画像" >
+          <div class="intro">&nbsp;&nbsp;&nbsp;某大学の一年生で巷ではウッディ<br>ではなく、こーでぃと呼ばれています。<br>
+            二ヶ月半目が飛び出るほどパソコンと向かい合っていたらウェブサイト作れるようになりました笑<br>
+            コロナの自粛要請でハゲるほど時間があるので適当な時事ネタオピニオンサイト作ったです。<br>
+            話変わりますがゴルフにどハマりしてます、ゴルフの誘いなら大体行っちゃいます⛳🏌️‍♂️<br>上手いかは別として</div>
         </div>
 
       </div>
@@ -51,8 +55,7 @@
     <footer>
       &copy; cody
       <div>
-        <%= link_to '削除', post_path(@post.id), method: :delete %>
-        <%= link_to '編集', edit_post_path(@post.id) %>
+        <a href="/posts/new">テスト</a>
       </div>
     </footer>
   </div>
@@ -72,7 +75,7 @@
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a href="#">
+        <a href="/contacts/index">
           <span class="main-title3">contact me</span>
           <span class="sub-title third">ご依頼</span>
         </a>

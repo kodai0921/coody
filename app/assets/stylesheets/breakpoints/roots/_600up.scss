@@ -3,3 +3,37 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+
+.container {
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  & .section-box {
+    margin-left: 20px;
+    
+    .content {
+      & > h2 {
+        font-size: 56px;
+      }
+    
+      & > p {
+        text-align: center;
+        font-size: 19px;
+      }
+    }
+    
+    & > a {
+      padding: 15px 15px;
+      margin: 20px auto;
+  
+    }
+
+  }
+  
+  
+
+}
+
+

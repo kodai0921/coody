@@ -3,3 +3,23 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+
+
+.sns {
+  font-size: 21px;
+}
+
+.sns-box {
+  display: flex;
+  margin-bottom: 40px;
+
+  & .note-box {
+    width: 300px !important;
+    margin-top: 40px;
+
+  }
+  & .twitter-box {
+    width: 300px !important;
+
+  }
+}

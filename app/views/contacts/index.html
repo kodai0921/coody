@@ -2,7 +2,7 @@
   <div id="container">
     <div class="cover"></div>
     <header>
-      <a href='http://localhost:3000/posts'>
+      <a href='/posts' >
         <div class="title-box">
           <i class="far fa-newspaper"></i>
           <h1>Coody.com</h1>
@@ -37,22 +37,28 @@
         <span></span>
       </button>
     </header>
+
+    
     <main>
-      <div class="contents-box">
-        <h2>ピックアップニュース</h2>
-        <div class="contents">
-          <div class="show-content">
-            <%= @post.content %>
-          </div>
+      <div class="main-box">
+        <h6>contact me<span>ご依頼など</span></h6>
+        <div class="main-content">
+          <div class="contact">&nbsp;&nbsp;&nbsp;この貧弱サイトの感想やクレーム、質問、なんでも結構です。連絡してくれたら嬉しいです。<br>ゴルフのお誘いならちょー喜びます！！</div>
         </div>
 
+      </div>
+      <div class="contacts-box">
+        <div class="box">
+          <p>mail<i class="fas fa-envelope"></i><span class="mail">:&nbsp;&nbsp;</span><a href="#">k.kitahara51@gmail.com</a></p>
+          <p>twitter<i class="fab fa-twitter"></i><span class="twitter">:&nbsp;&nbsp;</span><a href="https://twitter.com/makejpagain">こちら</a></p>
+          <p>note<i class="fas fa-book-open"></i><span class="note">:&nbsp;&nbsp;</span><a href="https://note.com/kodai0921">こちら</a></p>
+        </div>
       </div>
     </main>
     <footer>
       &copy; cody
       <div>
-        <%= link_to '削除', post_path(@post.id), method: :delete %>
-        <%= link_to '編集', edit_post_path(@post.id) %>
+        <a href="/posts/new">テスト</a>
       </div>
     </footer>
   </div>
@@ -66,7 +72,7 @@
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a href="#">
+        <a href="/intros/index">
           <span class="main-title2">about me</span>
           <span class="sub-title second">自己紹介</span>
         </a>
