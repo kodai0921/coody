@@ -22,6 +22,7 @@ Stylesheet: ベーススタイル
     position: absolute;
     top: 108px;
     left: 19px;
+    margin-top: 60px;
 
     & .content {
 
@@ -41,7 +42,7 @@ Stylesheet: ベーススタイル
         @include animation(
           $name: kf-animate-sub-title,
           $duration: 1.8s,
-          $delay: .6s
+          $delay: 1s
         );
         
         & > span {
